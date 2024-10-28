@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ed3dfd, #0bddd3, #ee0fee, #d6189d);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #main {
+            margin: 80px auto;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: none;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+            width: 350px;
+            text-align: center;
+        }
+        #first {
+            margin-top: 0;
+            font-family: 'Chiller', cursive;
+            font-size: 2em;
+        }
+        input[type="text"], input[type="password"], input[type="email"] {
+            font-size: 18px;
+            padding-left: 20px;
+            border-radius: 10px;
+            width: 280px;
+            height: 25px;
+            margin-top: 10px;
+            display: block;
+            margin: 10px auto;
+        }
+        #create {
+            height: 35px;
+            width: 100px;
+            margin-top: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #create:hover {
+            background-color: darkblue;
+        }
+        #output {
+            font-size: 26px;
+            margin-top: 20px;
+        }
+        #lbtn
+        {
+            display: block;
+            margin-left: 47%;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1 id="first">Create DoT.S Account</h1>
+        <input id="username" type="text" placeholder="Username" required>
+        <input id="email" type="email" placeholder="Email" required>
+        <input id="password" type="password" placeholder="Password" required>
+        <input id="confirm_password" type="password" placeholder="Confirm Password" required>
+        <input id="create" type="button" onclick="createAccount()" value="Create">
+        <div id="output"></div>
+        <button id="lbtn"></button>
+    </div>
+    <script src="html_dots.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h1 id="first">
+            DoT.S login
+        </h1>
+        <input id="input" type="text" placeholder="dot.s or phone number">
+        <input id="password" type="password" placeholder="password" required>
+        <br>
+        <input id="login" type="button" onclick="login()" value="Login">
+        <div id="output">
+            
+        </div>
+    </div>
+
+    <script src="html_dots.js"></script>
+</body>
+<style>
+    #output
+    {
+        font-size: 26px;
+        text-align: center;
+    }
+    #login
+    {
+        border: none;
+        border-radius: 10px;
+        color: white;
+        height: 35px;
+        width: 70px;
+        margin-top: 10px;
+        background-color: blue;
+        margin-left: 240px;   
+    }
+    button
+    {
+        border: none;
+        margin-left: 25px;
+        width: 170px;
+        background-color: rgb(37, 88, 199);
+    }
+    button:hover
+    {
+        box-shadow: 0px 0px 10px rgb(60, 90, 20);
+    }
+    #input
+    {
+        font-size: 18px;
+        padding-left: 20px;
+        border-radius: 10px;
+        width: 280px;
+        height: 25px;
+        margin-left: 25px;
+    }
+    #password
+    {
+        font-size: 18px;
+        padding-left: 20px;
+        border-radius: 10px;
+        width: 280px;
+        height: 25px;
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+    body
+    {
+        background: #cf7d12;
+        background: linear-gradient(to right,#fdbb3d, #b21f1f, #cf7d12, #d6189d);
+    }
+    #main
+    {
+        margin-top: 80px;
+        margin-left: 70px;
+        border-radius: 20px;
+        background-color: aqua;
+        height: 550px;
+        width: 350px;
+    }
+    #first
+    {
+        padding-top:30px;
+        text-align: center;
+        font-family: chiller;
+    }
+    *{
+        
+    }
+</style>
+</html>
