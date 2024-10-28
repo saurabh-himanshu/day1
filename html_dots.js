@@ -2,9 +2,13 @@ function login()
 {
     let name=document.getElementById("input").value;
     let pin=document.getElementById("password").value;
+    if(name && pin){
     console.log(name);
     console.log(pin);
     document.getElementById("output").innerText="Login as "+name;
+    }else{
+        alert("please fill");
+    }
 }
 function createAccount() {
     var username = document.getElementById('username').value;
